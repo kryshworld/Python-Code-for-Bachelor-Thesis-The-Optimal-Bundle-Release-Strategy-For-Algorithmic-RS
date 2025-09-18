@@ -334,7 +334,7 @@ def create_comprehensive_visualizations(results):
     plt.ylabel('Total Listeners', fontsize=20, fontweight='bold')
     plt.xlabel('Time Period', fontsize=20, fontweight='bold')
     plt.grid(True, alpha=0.3)
-    plt.ylim(0, 2500)
+    plt.ylim(1600, 2800)
     plt.legend(title='Strategy', loc='upper left', fontsize=18, title_fontsize=20)
     plt.tight_layout()
     plt.savefig('listeners_over_time_cum.png', dpi=300, bbox_inches='tight')
@@ -435,7 +435,7 @@ def create_comprehensive_visualizations(results):
     plt.grid(True, alpha=0.3)
     plt.legend(title='Strategy', loc='upper right', fontsize=18, title_fontsize=20)
     plt.tight_layout()
-    ax.set_ylim(0, 2200)
+    ax.set_ylim(0, 3000)
     plt.savefig('listeners_over_time_per_period.png', dpi=300, bbox_inches='tight')
     plt.show()
 
