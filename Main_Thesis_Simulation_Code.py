@@ -11,7 +11,6 @@ iterations = 50  # SGD iterations for each step
 target_density = 0.01  # Continue until this density is reached
 album_len = 3  # Number of songs per album
 num_of_albums = 2  # Number of albums to simulate
-cold_start_penalty = 0.85  # Cold start penalty for new songs
 rating_boost = 0.3  # Boost for songs rated above the mean
 
 """
@@ -209,7 +208,7 @@ def expand_matrices(R_truth, T_hat, V_hat, R_observed, R_mask, new_song_count):
     # Expand V_hat using the properly initialized V_truth for new songs, with cold start penalty
     V_hat_expanded = np.zeros((J + new_song_count, H))
     V_hat_expanded[:J, :] = V_hat
-    V_hat_expanded[J:, :] = np.random.rand(new_song_count, H) * cold_start_penalty
+    V_hat_expanded[J:, :] = np.random.rand(new_song_count, H)
     
     # Expand R_truth using the properly generated ratings for new songs
     R_truth_expanded = np.zeros((I, J + new_song_count))
