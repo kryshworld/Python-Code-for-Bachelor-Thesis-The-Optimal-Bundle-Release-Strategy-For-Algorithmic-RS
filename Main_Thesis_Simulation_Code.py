@@ -13,39 +13,6 @@ album_len = 3  # Number of songs per album
 num_of_albums = 2  # Number of albums to simulate
 rating_boost = 0.3  # Boost for songs rated above the mean
 
-"""
-Top 5 results by MSE:
-1. λt=0.01, λv=0.01, lr=0.05 -> MSE=60.206926
-2. λt=0.05, λv=0.01, lr=0.15 -> MSE=218.999495
-3. λt=0.05, λv=0.01, lr=0.10 -> MSE=224.011092
-4. λt=0.01, λv=0.05, lr=0.15 -> MSE=229.731417
-5. λt=0.01, λv=0.05, lr=0.10 -> MSE=266.906436
-"""
-
-"""for half size w only 0.01
-Top 5 results by MSE:
-1. λt=0.01, λv=0.01, lr=0.20 -> MSE=238.824514
-2. λt=0.05, λv=0.01, lr=0.15 -> MSE=248.011201
-3. λt=0.10, λv=0.01, lr=0.20 -> MSE=251.317872
-4. λt=0.10, λv=0.01, lr=0.10 -> MSE=252.147545
-5. λt=0.01, λv=0.01, lr=0.15 -> MSE=255.730637"""
-
-"""
-1. λt=0.05, λv=0.01, lr=0.10 -> MSE=0.007118
-2. λt=0.15, λv=0.01, lr=0.10 -> MSE=0.007703
-3. λt=0.20, λv=0.01, lr=0.20 -> MSE=0.007737
-4. λt=0.10, λv=0.01, lr=0.15 -> MSE=0.007794
-5. λt=0.05, λv=0.01, lr=0.15 -> MSE=0.008148
-"""
-
-"""
-1. λt=0.10, λv=0.01, lr=0.20 -> MSE=101.787507
-2. λt=0.15, λv=0.01, lr=0.15 -> MSE=105.526409
-3. λt=0.20, λv=0.01, lr=0.15 -> MSE=113.326175
-4. λt=0.15, λv=0.01, lr=0.20 -> MSE=126.118585
-5. λt=0.10, λv=0.01, lr=0.15 -> MSE=130.995319
-"""
-
 # Initialize truth matrix
 def initialize_truth_matrix(I, J, H):
     T_truth = np.random.rand(I, H)
