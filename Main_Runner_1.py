@@ -224,7 +224,7 @@ def save_run_results_to_csv(run_data, run_number, run_seed):
     """Save all results from a single run to CSV files"""
     
     # Create directory if it doesn't exist
-    results_dir = "simulation_results22"
+    results_dir = "simulation_results"
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
     
