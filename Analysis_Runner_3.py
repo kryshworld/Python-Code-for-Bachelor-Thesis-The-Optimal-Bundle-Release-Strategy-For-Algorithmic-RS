@@ -14,7 +14,7 @@ print("OS imported successfully")
 
 # Try the import from your thesis file
 try:
-    from Main_Thesis19 import *  # or whatever you named it
+    from Main_Thesis_Simulation_Code import *  # or whatever you named it
     print("Thesis file imported successfully")
     print(f"Successfully imported I = {I}")
 except Exception as e:
